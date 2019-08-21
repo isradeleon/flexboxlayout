@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="flexboxlayout.css">
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.css">
+    <link rel="stylesheet" href="prettify.css">
+    <style>
+    .item{
+        background-color: #0984e3;
+        color: white;
+        padding: 0.5rem;
+        border: 1px solid white;
+    }
+    .item.large{
+        padding: 1rem;
+        min-width: 50px;
+    }
+    .item.x-large{
+        min-width: 100px;
+        padding: 1.5rem;
+    }
+    .item.inner{
+        margin: 0rem;
+        background-color: white;
+        color: #0984e3;
+    }
+    </style>
+</head>
+<body>
+    <div class="site-section">
+        <div class="container">
+            <h1 class="main-title text-secondary">Flexbox Layout</h1>
+            <p class="below-title text-size-6">CSS library to quickly start using all Flexbox properties.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Flexbox element</h2>
+        <p>Easily set a flexbox element:</p>
+        <div class="item flex">flex element</div>
+        <div class="item flex inline">inline-flex element</div>
+
+<pre class="prettyprint">
+<div class="flex">flex element</div>
+<div class="flex inline">inline-flex element</div>
+</pre>
+
+        <br>
+            
+        <h2>Primary axis alignment & spacing (Horizontal)</h2>
+        <p>Centering the items along the primary axis with the <strong>justify-center</strong> class:</p>
+
+        <div class="flex justify-center" style="background-color: #e0e0e0;">
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex justify-center">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</pre>
+
+        <br>
+        <p>Flex-start alignment (left) along the primary axis with the <strong>justify-start</strong> class (default behavior):</p>
+
+        <div class="flex justify-start" style="background-color: #e0e0e0;">
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex justify-start">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</pre>
+
+        <br>
+        <p>Flex-end alignment (right) along the primary axis with the <strong>justify-end</strong> class:</p>
+
+        <div class="flex justify-end" style="background-color: #e0e0e0;">
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex justify-end">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</pre>
+
+        <br>
+        
+        <h2>Secondary axis alignment (Vertical)</h2>
+        <p>Centering the items along the secondary axis with the <strong>items-center</strong> class:</p>
+        <div class="flex items-center" style="background-color: #e0e0e0;">
+            <div class="grow-1 item"></div>
+            <div class="grow-1 item large"></div>
+            <div class="grow-1 item x-large"></div>
+            <div class="grow-1 item"></div>
+        </div>
+
+<pre class="prettyprint">
+<div class="flex items-center">
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+</div>
+</pre>
+
+        <br>
+
+        <p>Flex-start alignment using the <strong>items-start</strong> class:</p>
+
+        <div class="flex items-start" style="background-color: #e0e0e0;">
+            <div class="grow-1 item"></div>
+            <div class="grow-1 item large"></div>
+            <div class="grow-1 item x-large"></div>
+            <div class="grow-1 item"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex items-star">
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+</div>
+</pre>
+
+        <br>
+
+        <p>Flex-end alignment using the <strong>items-end</strong> class:</p>
+
+        <div class="flex items-end" style="background-color: #e0e0e0;">
+            <div class="grow-1 item"></div>
+            <div class="grow-1 item large"></div>
+            <div class="grow-1 item x-large"></div>
+            <div class="grow-1 item"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex items-end">
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+</div>
+</pre>
+
+        <br>
+
+        <p>Stretch items using the <strong>items-stretch</strong> class (default behavior):</p>
+
+        <div class="flex items-stretch" style="background-color: #e0e0e0;">
+            <div class="grow-1 item"></div>
+            <div class="grow-1 item large"></div>
+            <div class="grow-1 item x-large"></div>
+            <div class="grow-1 item"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex items-stretch">
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+</div>
+</pre>
+
+    </div>
+
+
+    <!-- <div class="flex">
+        <div class="item self-start">jaja</div>
+        <div class="item self-end">jaja</div>
+        <div class="item self-center">jiji</div>
+        <div class="item">jiji</div>
+        <div style="width: 100px; height: 100px;" class="item">jiji</div>
+        <div class="item flex column grow-1">
+            <span>jojo</span>
+            <span>jaja</span>
+            <span>jeje</span>
+        </div>
+    </div>
+    <br>
+    <div class="flex">
+        <span class="flex">jojo</span>
+    </div>
+    <br>
+    <div class="flex inline">
+        <span class="flex">jojo</span>
+    </div> -->
+
+    <script>
+        document.querySelectorAll("pre.prettyprint").forEach(function(element) {
+            element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
