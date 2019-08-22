@@ -28,6 +28,9 @@
         background-color: white;
         color: #0984e3;
     }
+    h2{
+        padding-top: 20px;
+    }
     </style>
 </head>
 <body>
@@ -112,6 +115,46 @@
 </pre>
 
         <br>
+        <p>Distribute items evenly across the primary axis with the <strong>justify-between</strong> class:</p>
+
+        <div class="flex justify-between" style="background-color: #e0e0e0;">
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex justify-between">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</pre>
+
+        <br>
+        <p>Distribute items with an equal margin across the primary axis with the <strong>justify-around</strong> class:</p>
+
+        <div class="flex justify-around" style="background-color: #e0e0e0;">
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+            <div class="item large"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex justify-around">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</pre>
+
+        <br>
         
         <h2>Secondary axis alignment (Vertical)</h2>
         <p>Centering the items along the secondary axis with the <strong>items-center</strong> class:</p>
@@ -133,7 +176,7 @@
 
         <br>
 
-        <p>Flex-start alignment using the <strong>items-start</strong> class:</p>
+        <p>Flex-start alignment (top) using the <strong>items-start</strong> class:</p>
 
         <div class="flex items-start" style="background-color: #e0e0e0;">
             <div class="grow-1 item"></div>
@@ -153,7 +196,7 @@
 
         <br>
 
-        <p>Flex-end alignment using the <strong>items-end</strong> class:</p>
+        <p>Flex-end alignment (bottom) using the <strong>items-end</strong> class:</p>
 
         <div class="flex items-end" style="background-color: #e0e0e0;">
             <div class="grow-1 item"></div>
@@ -185,6 +228,105 @@
 <pre class="prettyprint">
 <div class="flex items-stretch">
     <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+</div>
+</pre>
+
+        <br>
+
+        <h2>Change axis flow (flex-direction)</h2>
+        <p>Use the <strong>column</strong> class to change the flex-direction 
+        and set the vertical axis as the primary and the horizontal as the secondary:</p>
+        <div class="flex column items-center" style="background-color: #e0e0e0;">
+            <div class="item large"></div>
+            <div class="item x-large"></div>
+            <div class="item large"></div>
+            <div class="item x-large"></div>
+            <div class="item large"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex column items-center">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</pre>
+
+        <br>
+
+        <h2>Aligning individual items</h2>
+        <p>Centering individual items using the <strong>self-center</strong> class:</p>
+        <div class="flex" style="background-color: #e0e0e0;">
+            <div class="grow-1 self-center item"></div>
+            <div class="grow-1 item large"></div>
+            <div class="grow-1 item x-large"></div>
+            <div class="grow-1 item"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex">
+    <div class="grow-1 self-center"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+</div>
+</pre>
+
+        <br>
+
+        <p>Flex-start for individual items using the <strong>self-start</strong> class:</p>
+        <div class="flex" style="background-color: #e0e0e0;">
+            <div class="grow-1 self-start item"></div>
+            <div class="grow-1 item large"></div>
+            <div class="grow-1 item x-large"></div>
+            <div class="grow-1 item"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex">
+    <div class="grow-1 self-start"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+</div>
+</pre>
+
+        <br>
+
+        <p>Flex-end for individual items using the <strong>self-end</strong> class:</p>
+        <div class="flex" style="background-color: #e0e0e0;">
+            <div class="grow-1 self-end item"></div>
+            <div class="grow-1 item large"></div>
+            <div class="grow-1 item x-large"></div>
+            <div class="grow-1 item"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex">
+    <div class="grow-1 self-end"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+    <div class="grow-1"></div>
+</div>
+</pre>
+
+        <br>
+
+        <p>Stretching individual items using the <strong>self-stretch</strong> class:</p>
+        <div class="flex items-center" style="background-color: #e0e0e0;">
+            <div class="grow-1 self-stretch item"></div>
+            <div class="grow-1 item large"></div>
+            <div class="grow-1 item x-large"></div>
+            <div class="grow-1 item"></div>
+        </div>
+    
+<pre class="prettyprint">
+<div class="flex items-center">
+    <div class="grow-1 self-stretch"></div>
     <div class="grow-1"></div>
     <div class="grow-1"></div>
     <div class="grow-1"></div>

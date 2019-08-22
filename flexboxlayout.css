@@ -1,6 +1,16 @@
 /* FLEXBOX LAYOUT */
 .flex{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex.nowrap{
+    flex-wrap: nowrap;
+}
+
+.flex.wrap-reverse{
+    flex-wrap: wrap-reverse;
 }
 
 .flex.inline{
