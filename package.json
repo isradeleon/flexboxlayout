@@ -1,0 +1,32 @@
+{
+  "name": "flexboxlayout",
+  "version": "1.0.0",
+  "description": "CSS library to quickly start using all Flexbox properties.",
+  "main": "flexboxlayout.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isradeleon/flexboxlayout.git"
+  },
+  "keywords": [
+    "flexbox",
+    "css",
+    "frontend",
+    "library",
+    "minimal",
+    "lightweight"
+  ],
+  "author": "isradln",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isradeleon/flexboxlayout/issues"
+  },
+  "homepage": "https://github.com/isradeleon/flexboxlayout#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "csso": "^3.5.1",
+    "postcss": "^7.0.17"
+  }
+}
