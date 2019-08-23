@@ -5,16 +5,16 @@
     flex-direction: row;
 }
 
+.flex.inline{
+    display: inline-flex;
+}
+
 .flex.wrap{
     flex-wrap: wrap;
 }
 
 .flex.wrap-reverse{
     flex-wrap: wrap-reverse;
-}
-
-.flex.inline{
-    display: inline-flex;
 }
 
 .flex.reverse{
@@ -29,42 +29,42 @@
     flex-direction: column-reverse;
 }
 
-.flex.items-center{
+.items-center{
     align-items: center;
 }
-.flex.items-end{
+.items-end{
     align-items: flex-end;
 }
-.flex.items-start{
+.items-start{
     align-items: flex-start;
 }
-.flex.items-stretch{
+.items-stretch{
     align-items: stretch;
 }
 
-.flex.content-center{
+/* .content-center{
     align-content: center;
 }
-.flex.content-end{
+.content-end{
     align-content: flex-end;
 }
-.flex.content-start{
+.content-start{
     align-content: flex-start;
-}
+} */
 
-.flex.justify-center{
+.justify-center{
     justify-content: center;
 }
-.flex.justify-start{
+.justify-start{
     justify-content: flex-start;
 }
-.flex.justify-end{
+.justify-end{
     justify-content: flex-end;
 }
-.flex.justify-between{
+.justify-between{
     justify-content: space-between;
 }
-.flex.justify-around{
+.justify-around{
     justify-content: space-around;
 }
 
@@ -103,15 +103,6 @@
     flex-grow: 0;
 }
 
-.shrink-6{
-    flex-shrink: 6;
-}
-.shrink-5{
-    flex-shrink: 5;
-}
-.shrink-4{
-    flex-shrink: 4;
-}
 .shrink-3{
     flex-shrink: 3;
 }
@@ -124,3 +115,32 @@
 .shrink-0{
     flex-shrink: 0;
 }
+
+/* @media (min-width: 768px) and (max-width: 991px){
+    .flex.tablet-column{
+        flex-direction: column;
+    }
+    .flex.tablet-row{
+        flex-direction: row;
+    }
+    .flex.tablet-column-reverse{
+        flex-direction: column-reverse;
+    }
+    .flex.tablet-row-reverse{
+        flex-direction: row-reverse;
+    }
+}
+@media (max-width: 767px){
+    .flex.mobile-column{
+        flex-direction: column;
+    }
+    .flex.mobile-row{
+        flex-direction: row;
+    }
+    .flex.mobile-column-reverse{
+        flex-direction: column-reverse;
+    }
+    .flex.mobile-row-reverse{
+        flex-direction: row-reverse;
+    }
+} */

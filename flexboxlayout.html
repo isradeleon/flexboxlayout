@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flexbox Layout</title>
     <link rel="stylesheet" href="production/flexboxlayout.min.css">
-    <link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.css">
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="prettify.css">
     <style>
@@ -39,11 +39,16 @@
         <div class="container">
             <h1 class="main-title text-secondary">Flexbox Layout</h1>
             <p class="below-title text-size-6">CSS library to quickly start using all Flexbox properties.</p>
+            <ul>
+                <li>Autoprefixed for better browser support</li>
+                <li>Production ready</li>
+                <li>Only 2.2K size</li>
+            </ul>
             <div>
                 <a class="btn rounded box-shadow-1 text-size-6">
                     <i class="fa fa-cloud-download-alt"></i> Download
                 </a>
-                <a class="btn rounded box-shadow-1 text-size-6 secondary text-white">
+                <a class="btn rounded box-shadow-1 text-size-6 secondary">
                     <i class="fab fa-github-alt"></i> Github
                 </a>
             </div>
@@ -66,7 +71,7 @@
         <h2>Primary axis alignment & spacing (Horizontal)</h2>
         <p>Centering the items along the primary axis with the <strong>justify-center</strong> class:</p>
 
-        <div class="flex justify-center" style="background-color: #e0e0e0;">
+        <div class="flex justify-center" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item large"></div>
             <div class="item large"></div>
             <div class="item large"></div>
@@ -86,7 +91,7 @@
         <br>
         <p>Flex-start alignment (left) along the primary axis with the <strong>justify-start</strong> class (default behavior):</p>
 
-        <div class="flex justify-start" style="background-color: #e0e0e0;">
+        <div class="flex justify-start" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item large"></div>
             <div class="item large"></div>
             <div class="item large"></div>
@@ -106,7 +111,7 @@
         <br>
         <p>Flex-end alignment (right) along the primary axis with the <strong>justify-end</strong> class:</p>
 
-        <div class="flex justify-end" style="background-color: #e0e0e0;">
+        <div class="flex justify-end" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item large"></div>
             <div class="item large"></div>
             <div class="item large"></div>
@@ -126,7 +131,7 @@
         <br>
         <p>Distribute items evenly across the primary axis with the <strong>justify-between</strong> class:</p>
 
-        <div class="flex justify-between" style="background-color: #e0e0e0;">
+        <div class="flex justify-between" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item large"></div>
             <div class="item large"></div>
             <div class="item large"></div>
@@ -146,7 +151,7 @@
         <br>
         <p>Distribute items with an equal margin across the primary axis with the <strong>justify-around</strong> class:</p>
 
-        <div class="flex justify-around" style="background-color: #e0e0e0;">
+        <div class="flex justify-around" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item large"></div>
             <div class="item large"></div>
             <div class="item large"></div>
@@ -167,7 +172,7 @@
         
         <h2>Secondary axis alignment (Vertical)</h2>
         <p>Centering the items along the secondary axis with the <strong>items-center</strong> class:</p>
-        <div class="flex items-center" style="background-color: #e0e0e0;">
+        <div class="flex items-center" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 item"></div>
             <div class="grow-1 item large"></div>
             <div class="grow-1 item x-large"></div>
@@ -187,7 +192,7 @@
 
         <p>Flex-start alignment (top) using the <strong>items-start</strong> class:</p>
 
-        <div class="flex items-start" style="background-color: #e0e0e0;">
+        <div class="flex items-start" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 item"></div>
             <div class="grow-1 item large"></div>
             <div class="grow-1 item x-large"></div>
@@ -207,7 +212,7 @@
 
         <p>Flex-end alignment (bottom) using the <strong>items-end</strong> class:</p>
 
-        <div class="flex items-end" style="background-color: #e0e0e0;">
+        <div class="flex items-end" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 item"></div>
             <div class="grow-1 item large"></div>
             <div class="grow-1 item x-large"></div>
@@ -227,7 +232,7 @@
 
         <p>Stretch items using the <strong>items-stretch</strong> class (default behavior):</p>
 
-        <div class="flex items-stretch" style="background-color: #e0e0e0;">
+        <div class="flex items-stretch" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 item"></div>
             <div class="grow-1 item large"></div>
             <div class="grow-1 item x-large"></div>
@@ -248,7 +253,7 @@
         <h2>Change axis flow (flex-direction)</h2>
         <p>Use the <strong>column</strong> class to change the flex-direction 
         and set the vertical axis as the primary and the horizontal as the secondary:</p>
-        <div class="flex column items-center" style="background-color: #e0e0e0;">
+        <div class="flex column items-center" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item large"></div>
             <div class="item x-large"></div>
             <div class="item large"></div>
@@ -269,7 +274,7 @@
 
         <h2>Aligning individual items</h2>
         <p>Centering individual items using the <strong>self-center</strong> class:</p>
-        <div class="flex" style="background-color: #e0e0e0;">
+        <div class="flex" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 self-center item"></div>
             <div class="grow-1 item large"></div>
             <div class="grow-1 item x-large"></div>
@@ -288,7 +293,7 @@
         <br>
 
         <p>Flex-start for individual items using the <strong>self-start</strong> class:</p>
-        <div class="flex" style="background-color: #e0e0e0;">
+        <div class="flex" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 self-start item"></div>
             <div class="grow-1 item large"></div>
             <div class="grow-1 item x-large"></div>
@@ -307,7 +312,7 @@
         <br>
 
         <p>Flex-end for individual items using the <strong>self-end</strong> class:</p>
-        <div class="flex" style="background-color: #e0e0e0;">
+        <div class="flex" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 self-end item"></div>
             <div class="grow-1 item large"></div>
             <div class="grow-1 item x-large"></div>
@@ -326,7 +331,7 @@
         <br>
 
         <p>Stretching individual items using the <strong>self-stretch</strong> class:</p>
-        <div class="flex items-center" style="background-color: #e0e0e0;">
+        <div class="flex items-center" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 self-stretch item"></div>
             <div class="grow-1 item large"></div>
             <div class="grow-1 item x-large"></div>
@@ -346,7 +351,7 @@
 
         <h2>Reordering the items</h2>
         <p>Easily reordering the items using the <strong>reverse</strong> class:</p>
-        <div class="flex reverse" style="background-color: #e0e0e0;">
+        <div class="flex reverse" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 item">1</div>
             <div class="grow-1 item">2</div>
             <div class="grow-1 item">3</div>
@@ -367,7 +372,7 @@
     <div class="grow-1">7</div>
 </div>
 </pre>
-        <div class="flex column reverse" style="background-color: #e0e0e0;">
+        <div class="flex column reverse" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 item large">1</div>
             <div class="grow-1 item large">2</div>
             <div class="grow-1 item large">3</div>
@@ -393,7 +398,7 @@
 
         <h2>Grow items</h2>
         <p>Easily set the flex-grow, from 0 to 6, for the items with the <strong>grow-*</strong> class:</p>
-        <div class="flex" style="background-color: #e0e0e0;">
+        <div class="flex" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-0 item"></div>
             <div class="grow-1 item"></div>
             <div class="grow-2 item"></div>
@@ -419,7 +424,7 @@
 
         <h2>Shrink items</h2>
         <p>Easily set the flex-shrink, from 0 to 3, for the items with the <strong>shrink-*</strong> class:</p>
-        <div class="flex" style="background-color: #e0e0e0;">
+        <div class="flex" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="shrink-0 item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             <div class="shrink-1 item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
             <div class="shrink-2 item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
@@ -439,7 +444,7 @@
 
         <h2>Flex-wrap property</h2>
         <p>By default the flex-wrap property is set to nowrap. You may change this too with the <strong>wrap</strong> class:</p>
-        <div class="flex wrap" style="background-color: #e0e0e0;">
+        <div class="flex wrap" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consectetur amet commodi, animi modi minima reprehenderit quod debitis tenetur rerum ab vel fuga illum ut laudantium? Tenetur molestiae dolorum delectus!</div>
         </div>
@@ -452,7 +457,7 @@
 </pre>
 
         <p>Or using <strong>wrap-reverse</strong>:</p>
-        <div class="flex wrap-reverse" style="background-color: #e0e0e0;">
+        <div class="flex wrap-reverse" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consectetur amet commodi, animi modi minima reprehenderit quod debitis tenetur rerum ab vel fuga illum ut laudantium? Tenetur molestiae dolorum delectus!</div>
         </div>
