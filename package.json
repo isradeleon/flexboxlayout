@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/isradeleon/flexboxlayout/issues"
   },
-  "homepage": "https://github.com/isradeleon/flexboxlayout#readme",
+  "homepage": "http://isradeleon.com/flexboxlayout.html",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "csso": "^3.5.1",
