@@ -1,6 +1,6 @@
 # Flexbox Layout
 
-Minimal CSS library to help you quickly start using all Flexbox properties.
+Minimal CSS library to help you quickly start using all Flexbox properties. Flexbox Layout is already prefixed, and production ready.
 
 ## Features
 * Already prefixed
