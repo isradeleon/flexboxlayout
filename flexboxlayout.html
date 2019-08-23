@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flexbox Layout</title>
-    <link rel="stylesheet" href="flexboxlayout.css">
+    <link rel="stylesheet" href="production/flexboxlayout.min.css">
     <link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="prettify.css">
@@ -35,7 +35,7 @@
     </style>
 </head>
 <body>
-    <div class="site-section">
+    <div class="site-section" style="min-height: 10vh;">
         <div class="container">
             <h1 class="main-title text-secondary">Flexbox Layout</h1>
             <p class="below-title text-size-6">CSS library to quickly start using all Flexbox properties.</p>
@@ -344,7 +344,54 @@
 
         <br>
 
-        <h2>Grow the elements</h2>
+        <h2>Reordering the items</h2>
+        <p>Easily reordering the items using the <strong>reverse</strong> class:</p>
+        <div class="flex reverse" style="background-color: #e0e0e0;">
+            <div class="grow-1 item">1</div>
+            <div class="grow-1 item">2</div>
+            <div class="grow-1 item">3</div>
+            <div class="grow-1 item">4</div>
+            <div class="grow-1 item">5</div>
+            <div class="grow-1 item">6</div>
+            <div class="grow-1 item">7</div>
+        </div>
+
+<pre class="prettyprint">
+<div class="flex reverse">
+    <div class="grow-1">1</div>
+    <div class="grow-1">2</div>
+    <div class="grow-1">3</div>
+    <div class="grow-1">4</div>
+    <div class="grow-1">5</div>
+    <div class="grow-1">6</div>
+    <div class="grow-1">7</div>
+</div>
+</pre>
+        <div class="flex column reverse" style="background-color: #e0e0e0;">
+            <div class="grow-1 item large">1</div>
+            <div class="grow-1 item large">2</div>
+            <div class="grow-1 item large">3</div>
+            <div class="grow-1 item large">4</div>
+            <div class="grow-1 item large">5</div>
+            <div class="grow-1 item large">6</div>
+            <div class="grow-1 item large">7</div>
+        </div>
+
+<pre class="prettyprint">
+<div class="flex column reverse">
+    <div class="grow-1">1</div>
+    <div class="grow-1">2</div>
+    <div class="grow-1">3</div>
+    <div class="grow-1">4</div>
+    <div class="grow-1">5</div>
+    <div class="grow-1">6</div>
+    <div class="grow-1">7</div>
+</div>
+</pre>
+
+        <br>
+
+        <h2>Grow items</h2>
         <p>Easily set the flex-grow, from 0 to 6, for the items with the <strong>grow-*</strong> class:</p>
         <div class="flex" style="background-color: #e0e0e0;">
             <div class="grow-0 item"></div>
@@ -357,7 +404,7 @@
         </div>
 
 <pre class="prettyprint">
-<div class="flex items-center">
+<div class="flex">
     <div class="grow-0"></div>
     <div class="grow-1"></div>
     <div class="grow-2"></div>
@@ -365,6 +412,55 @@
     <div class="grow-4"></div>
     <div class="grow-5"></div>
     <div class="grow-6"></div>
+</div>
+</pre>
+
+        <br>
+
+        <h2>Shrink items</h2>
+        <p>Easily set the flex-shrink, from 0 to 3, for the items with the <strong>shrink-*</strong> class:</p>
+        <div class="flex" style="background-color: #e0e0e0;">
+            <div class="shrink-0 item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="shrink-1 item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="shrink-2 item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="shrink-3 item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+
+<pre class="prettyprint">
+<div class="flex">
+    <div class="shrink-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="shrink-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+    <div class="shrink-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+    <div class="shrink-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+</div>
+</pre>
+
+        <br>
+
+        <h2>Flex-wrap property</h2>
+        <p>By default the flex-wrap property is set to nowrap. You may change this too with the <strong>wrap</strong> class:</p>
+        <div class="flex wrap" style="background-color: #e0e0e0;">
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consectetur amet commodi, animi modi minima reprehenderit quod debitis tenetur rerum ab vel fuga illum ut laudantium? Tenetur molestiae dolorum delectus!</div>
+        </div>
+
+<pre class="prettyprint">
+<div class="flex wrap">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+</div>
+</pre>
+
+        <p>Or using <strong>wrap-reverse</strong>:</p>
+        <div class="flex wrap-reverse" style="background-color: #e0e0e0;">
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consectetur amet commodi, animi modi minima reprehenderit quod debitis tenetur rerum ab vel fuga illum ut laudantium? Tenetur molestiae dolorum delectus!</div>
+        </div>
+
+<pre class="prettyprint">
+<div class="flex wrap-reverse">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 </div>
 </pre>
 

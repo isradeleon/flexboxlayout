@@ -1,12 +1,12 @@
 /* FLEXBOX LAYOUT */
 .flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
 }
 
-.flex.nowrap{
-    flex-wrap: nowrap;
+.flex.wrap{
+    flex-wrap: wrap;
 }
 
 .flex.wrap-reverse{
@@ -17,8 +17,16 @@
     display: inline-flex;
 }
 
+.flex.reverse{
+    flex-direction: row-reverse;
+}
+
 .flex.column{
     flex-direction: column;
+}
+
+.flex.column.reverse{
+    flex-direction: column-reverse;
 }
 
 .flex.items-center{
