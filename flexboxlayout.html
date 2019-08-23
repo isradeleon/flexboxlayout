@@ -38,17 +38,17 @@
     <div class="site-section" style="min-height: 10vh;">
         <div class="container">
             <h1 class="main-title text-secondary">Flexbox Layout</h1>
-            <p class="below-title text-size-6">CSS library to quickly start using all Flexbox properties.</p>
+            <p class="below-title text-size-6">Minimal CSS library to quickly start using all Flexbox properties.</p>
             <ul>
                 <li>Autoprefixed for better browser support</li>
                 <li>Production ready</li>
-                <li>Only 2.2K size</li>
+                <li>Only 2K size</li>
             </ul>
             <div>
                 <a class="btn rounded box-shadow-1 text-size-6">
                     <i class="fa fa-cloud-download-alt"></i> Download
                 </a>
-                <a class="btn rounded box-shadow-1 text-size-6 secondary">
+                <a href="https://github.com/isradeleon/flexboxlayout" class="btn rounded box-shadow-1 text-size-6 secondary">
                     <i class="fab fa-github-alt"></i> Github
                 </a>
             </div>
@@ -56,7 +56,38 @@
     </div>
 
     <div class="container">
-        <h2>Flexbox element</h2>
+        <h2>Table of contents:</h2>
+        <ul>
+            <li>
+                <a href="#flexbox">Flexbox element</a>
+            </li>
+            <li>
+                <a href="#justify-content">Primary axis alignment & spacing (Horizontal)</a>
+            </li>
+            <li>
+                <a href="#align-items">Secondary axis alignment (Vertical)</a>
+            </li>
+            <li>
+                <a href="#flex-direction">Change axis flow (flex-direction)</a>
+            </li>
+            <li>
+                <a href="#individual-alignment">Aligning individual items</a>
+            </li>
+            <li>
+                <a href="#reordering">Reordering the items</a>
+            </li>
+            <li>
+                <a href="#flex-grow">Flex-grow property</a>
+            </li>
+            <li>
+                <a href="#flex-shrink">Flex-shrink property</a>
+            </li>
+            <li>
+                <a href="#flex-wrap">Flex-wrap property</a>
+            </li>
+        </ul>
+
+        <h2 id="flexbox">Flexbox element</h2>
         <p>Easily set a flexbox element:</p>
         <div class="item flex">flex element</div>
         <div class="item flex inline">inline-flex element</div>
@@ -68,7 +99,7 @@
 
         <br>
             
-        <h2>Primary axis alignment & spacing (Horizontal)</h2>
+        <h2 id="justify-content">Primary axis alignment & spacing (Horizontal)</h2>
         <p>Centering the items along the primary axis with the <strong>justify-center</strong> class:</p>
 
         <div class="flex justify-center" style="background-color: #e0e0e0; overflow-x: auto;">
@@ -170,7 +201,7 @@
 
         <br>
         
-        <h2>Secondary axis alignment (Vertical)</h2>
+        <h2 id="align-items">Secondary axis alignment (Vertical)</h2>
         <p>Centering the items along the secondary axis with the <strong>items-center</strong> class:</p>
         <div class="flex items-center" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 item"></div>
@@ -250,7 +281,7 @@
 
         <br>
 
-        <h2>Change axis flow (flex-direction)</h2>
+        <h2 id="flex-direction">Change axis flow (flex-direction)</h2>
         <p>Use the <strong>column</strong> class to change the flex-direction 
         and set the vertical axis as the primary and the horizontal as the secondary:</p>
         <div class="flex column items-center" style="background-color: #e0e0e0; overflow-x: auto;">
@@ -272,7 +303,7 @@
 
         <br>
 
-        <h2>Aligning individual items</h2>
+        <h2 id="individual-alignment">Aligning individual items</h2>
         <p>Centering individual items using the <strong>self-center</strong> class:</p>
         <div class="flex" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 self-center item"></div>
@@ -349,7 +380,7 @@
 
         <br>
 
-        <h2>Reordering the items</h2>
+        <h2 id="reordering">Reordering the items</h2>
         <p>Easily reordering the items using the <strong>reverse</strong> class:</p>
         <div class="flex reverse" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-1 item">1</div>
@@ -396,7 +427,7 @@
 
         <br>
 
-        <h2>Grow items</h2>
+        <h2 id="flex-grow">Flex-grow property</h2>
         <p>Easily set the flex-grow, from 0 to 6, for the items with the <strong>grow-*</strong> class:</p>
         <div class="flex" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="grow-0 item"></div>
@@ -422,7 +453,7 @@
 
         <br>
 
-        <h2>Shrink items</h2>
+        <h2 id="flex-shrink">Flex-shrink property</h2>
         <p>Easily set the flex-shrink, from 0 to 3, for the items with the <strong>shrink-*</strong> class:</p>
         <div class="flex" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="shrink-0 item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -442,7 +473,7 @@
 
         <br>
 
-        <h2>Flex-wrap property</h2>
+        <h2 id="flex-wrap">Flex-wrap property</h2>
         <p>By default the flex-wrap property is set to nowrap. You may change this too with the <strong>wrap</strong> class:</p>
         <div class="flex wrap" style="background-color: #e0e0e0; overflow-x: auto;">
             <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>

@@ -1,7 +1,7 @@
 {
   "name": "flexboxlayout",
   "version": "1.0",
-  "description": "CSS library to quickly start using all Flexbox properties.",
+  "description": "Minimal CSS library to quickly start using all Flexbox properties.",
   "main": "flexboxlayout.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,11 @@
     "autoprefixer": "^9.6.1",
     "csso": "^3.5.1",
     "postcss": "^7.0.17"
-  }
+  },
+  "files": [
+    "production",
+    "flexboxlayout.css",
+    "README.md",
+    "LICENSE"
+  ]
 }
