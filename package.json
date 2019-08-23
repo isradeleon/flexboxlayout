@@ -1,5 +1,5 @@
 {
-  "name": "flexboxlayout",
+  "name": "@isradln/flexboxlayout",
   "version": "1.0.0",
   "description": "Minimal CSS library to quickly start using all Flexbox properties.",
   "main": "flexboxlayout.css",
