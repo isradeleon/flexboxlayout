@@ -3,9 +3,9 @@
 Minimal CSS library to help you quickly start using all Flexbox properties.
 
 ## Features
-* Autoprefixed for better browser support
+* Already prefixed
 * Production ready
-* Only 2K size
+* Lightweight: only 2K size
 
 ## Built with
 
