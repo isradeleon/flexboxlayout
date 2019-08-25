@@ -1,4 +1,4 @@
-# Flexbox Layout
+# [Flexbox Layout](http://isradeleon.com/flexboxlayout.html)
 
 Minimal library to help you quickly start using all Flexbox properties through CSS classes. Flexbox Layout is already prefixed, and production ready.
 
